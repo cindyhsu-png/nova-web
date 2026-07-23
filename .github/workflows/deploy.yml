@@ -1,0 +1,42 @@
+# 自動建置＋部署到 GitHub Pages
+# 觸發時機：
+#   1. 推送程式碼到 main 分支
+#   2. 手動：GitHub → Actions → 本 workflow → Run workflow（CMS 後台發布後來按這裡）
+#   3. 每天台北時間 06:00 自動重建一次（自動撿起 CMS 最新發布的內容）
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "0 22 * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run build   # 從 Supabase 拉「已發布」內容 → dist/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

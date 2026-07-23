@@ -2,9 +2,9 @@
    - anon key 為公開金鑰（publishable），寫入權限由 nova_* RLS 白名單把關
    - 內容模型：HTML 內建文案＝預設值；CMS 只存「覆寫」，空值＝用預設 */
 
-export const CMS_URL = "https://ixvvoqywxddpjuzqmetb.supabase.co";
+export const CMS_URL = "https://fssquxklkhawjbfipncy.supabase.co";
 export const CMS_ANON_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml4dnZvcXl3eGRkcGp1enFtZXRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM3NTIxMDUsImV4cCI6MjA5OTMyODEwNX0.h7cP2QWVR49JEGYSoNMjbqY94bGbDXAX45WBLrpWiKk";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZzc3F1eGtsa2hhd2piZmlwbmN5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ4MDUzOTAsImV4cCI6MjEwMDM4MTM5MH0.A8xteLHy-wF9orh87N_qVTOIJUD8GrjSA3_Y8qjaFPk";
 export const BUCKET = "nova";
 
 /** 撈區塊（columns 指定草稿或已發布欄位）。失敗回空物件 → 前台用 HTML 內建預設。 */

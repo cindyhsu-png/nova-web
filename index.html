@@ -284,6 +284,9 @@ html:not(.js) .reveal,html:not(.js) .reveal.mask{opacity:1!important;transform:n
 .wp-cite::after{content:"";position:absolute;inset:7px;pointer-events:none;background-image:var(--cross-dim),var(--cross-dim);background-repeat:no-repeat;background-size:8px;background-position:right top,left bottom;opacity:.6}
 .wc-tag{font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;color:var(--accent);text-transform:uppercase}
 .wp-cite blockquote{margin:16px 0 0;font-family:var(--font-display);font-weight:500;font-size:clamp(1.05rem,1.6vw,1.3rem);line-height:1.62;color:var(--ink-0);text-wrap:pretty}
+.wc-list{flex:1;display:grid;grid-auto-rows:1fr;margin-top:4px}
+.wc-list blockquote{display:flex;align-items:center;margin:0;padding:13px 0}
+.wc-list blockquote+blockquote{border-top:1px solid var(--line-soft)}
 .wc-src{margin-top:auto;padding-top:18px;border-top:1px solid var(--line-soft);display:flex;flex-direction:column;gap:5px}
 .wc-src b{font-family:var(--font-display);font-weight:600;color:var(--ink-0);font-size:.94rem}
 .wc-src span{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;color:var(--ink-1)}
@@ -876,8 +879,12 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
           <p class="wp-note" data-cms="why.note">30 歲以下、年資未滿 5 年，相對同職類未寫者的月薪中位數差距。成長最快職類：專案／產品管理（+263%）。＊溢價為 104 履歷資料庫的相關性觀察，非因果關係。</p>
         </div>
         <aside class="wp-cite">
-          <div class="wc-tag" data-cms="why.cite_tag">NEWS RELEASE · 104 人力銀行 · 2025.12</div>
-          <blockquote data-cms="why.cite_quote">「搶 AI 人才！工作機會年增 38%，AI 業務職缺成長 76% 最亮眼。」</blockquote>
+          <div class="wc-tag" data-cms="why.cite_tag">NEWS RELEASE</div>
+          <div class="wc-list" data-cms-list="why.news">
+            <blockquote data-cms-item>HR 不再問「會不會 Excel」，而是問「會不會 AI 工具」。</blockquote>
+            <blockquote data-cms-item>AI 職缺最常要求的技能：流程自動化。</blockquote>
+            <blockquote data-cms-item>AI 能力，要怎麼寫在履歷上？</blockquote>
+          </div>
           <div class="wc-src">
             <b data-cms="why.cite_src">104 人力銀行「AI 職涯平台」新聞稿（2025.12）</b>
             <span data-cms="why.cite_note">《AI 人才趨勢報告》追蹤近 900 萬份履歷與職缺</span>

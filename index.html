@@ -640,7 +640,7 @@ html.js .imp .b::before{transform:scaleX(0)}
 .imp-x5{margin-top:20px;font-family:var(--font-display);font-weight:500;font-size:clamp(1rem,1.5vw,1.14rem);color:var(--ink-1)}
 .imp-x5 b{color:var(--dc,var(--accent));font-weight:600;font-size:1.25em}
 /* 作品區塊（關鍵信任素材 · 版位預留） */
-.tp-works{margin-top:clamp(30px,4.5vh,48px)}
+.tp-works{display:none}
 .works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .workph{position:relative;aspect-ratio:16/10;margin:0;border:1px dashed var(--line);background:linear-gradient(160deg,rgba(24,19,14,.7),rgba(12,9,7,.6));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
 .workph::after{content:"";position:absolute;inset:7px;pointer-events:none;background-image:var(--cross-dim),var(--cross-dim);background-repeat:no-repeat;background-size:8px;background-position:left top,right bottom;opacity:.6}
@@ -827,7 +827,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
 
 <div class="hud br">CURSOR　X <span id="cx" class="dim">000</span>　Y <span id="cy" class="dim">000</span></div>
 <div class="hud bl">
-  <div class="quote"><span class="av">教<img src="img/portrait_mentor.jpg" data-cms-src="hero.quote_img" alt="NOVA 業界教練" loading="lazy" decoding="async"></span><p><b data-cms="hero.quote">把抽象的潛能，變成你交得出去的作品。</b><br><span data-cms="hero.quote_by">— NOVA 業界教練</span></p></div><!-- 示意人像（AI 生成 · 亞洲專業人士），待換真實教練照 -->
+  <div class="quote"><span class="av">教<img data-cms-src="hero.quote_img" data-cms-hide-empty hidden alt="NOVA 業界教練" loading="lazy" decoding="async"></span><p><b data-cms="hero.quote">把抽象的潛能，變成你交得出去的作品。</b><br><span data-cms="hero.quote_by">— NOVA 業界教練</span></p></div>
 </div>
 
 <div class="hero">
@@ -836,7 +836,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
   <p class="tagline" data-cms="hero.tagline">從 AI 啟航，五大領域任你選</p>
   <p class="sub" data-cms="hero.sub">別人練好幾年的專業，用 AI 賦能，你可以快速學習、做出成果。業界教練陪跑 —— 探索無限，但不迷航。</p>
   <div class="hero-keys"><span data-cms="hero.key1">快速學會</span><i>·</i><span data-cms="hero.key2">做出作品</span><i>·</i><span data-cms="hero.key3">領先起跑</span></div>
-  <a class="cta" href="#curriculum"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="hero.cta">開始你的旅程</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+  <a class="cta" href="https://novastar.kolable.app/meets/us" target="_blank" rel="noopener"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="hero.cta">開始你的旅程</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
   <span class="hint-line"></span>
 </div>
 
@@ -858,7 +858,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
       <div class="sec-head reveal">
         <div class="sec-eyebrow"><span class="n">01</span> 為什麼是現在 — WHY NOW</div>
         <h2 class="sec-h">會用 AI 的人，<br>正在被<span class="ac">重新定價</span></h2>
-        <p class="sec-lead" data-cms="why.lead">別人練好幾年的專業，用 AI 賦能，你可以快速學習、做出成果。</p>
+        <p class="sec-lead" data-cms="why.lead">104 追蹤近 900 萬份履歷與職缺：AI 人才需求 5 年成長 97.6%，是整體招募市場的 4.3 倍。</p>
       </div>
       <div class="stats reveal d1">
         <div class="stat"><div class="num"><span class="cup" data-to="97.6" data-dec="1" data-pre="+">+97.6</span><span class="u">%</span></div><div class="lb">AI 人才需求 · 5 年成長</div></div>
@@ -1193,7 +1193,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
               <figure class="workph"><img class="wp-img" data-cms-src="tab-mkt.w3_img" data-cms-hide-empty hidden alt="" loading="lazy" decoding="async"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="9" cy="10" r="1.8"/><path d="M3 17l5-4 4 3 4-4 5 5"/></svg><figcaption data-cms="tab-mkt.w3_cap">投放成效報表</figcaption><span class="ph-tag">IMAGE SLOT</span></figure>
             </div>
           </div>
-          <div class="tp-cta"><a class="cta" href="#start"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-mkt.cta">預約行銷領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+          <div class="tp-cta"><a class="cta" href="https://novastar.kolable.app/meets/us" target="_blank" rel="noopener"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-mkt.cta">預約行銷領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
         </div>
 
         <!-- ── 設計 ── -->
@@ -1290,7 +1290,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
               <figure class="workph"><img class="wp-img" data-cms-src="tab-des.w3_img" data-cms-hide-empty hidden alt="" loading="lazy" decoding="async"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="9" cy="10" r="1.8"/><path d="M3 17l5-4 4 3 4-4 5 5"/></svg><figcaption data-cms="tab-des.w3_cap">素材生成流水線</figcaption><span class="ph-tag">IMAGE SLOT</span></figure>
             </div>
           </div>
-          <div class="tp-cta"><a class="cta" href="#start"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-des.cta">預約設計領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+          <div class="tp-cta"><a class="cta" href="https://novastar.kolable.app/meets/us" target="_blank" rel="noopener"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-des.cta">預約設計領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
         </div>
 
         <!-- ── 自媒體 ── -->
@@ -1387,7 +1387,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
               <figure class="workph"><img class="wp-img" data-cms-src="tab-med.w3_img" data-cms-hide-empty hidden alt="" loading="lazy" decoding="async"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="9" cy="10" r="1.8"/><path d="M3 17l5-4 4 3 4-4 5 5"/></svg><figcaption data-cms="tab-med.w3_cap">頻道成長數據</figcaption><span class="ph-tag">IMAGE SLOT</span></figure>
             </div>
           </div>
-          <div class="tp-cta"><a class="cta" href="#start"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-med.cta">預約自媒體領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+          <div class="tp-cta"><a class="cta" href="https://novastar.kolable.app/meets/us" target="_blank" rel="noopener"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-med.cta">預約自媒體領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
         </div>
 
         <!-- ── 產品設計 ── -->
@@ -1484,7 +1484,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
               <figure class="workph"><img class="wp-img" data-cms-src="tab-prod.w3_img" data-cms-hide-empty hidden alt="" loading="lazy" decoding="async"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="9" cy="10" r="1.8"/><path d="M3 17l5-4 4 3 4-4 5 5"/></svg><figcaption data-cms="tab-prod.w3_cap">上線的網站／App</figcaption><span class="ph-tag">IMAGE SLOT</span></figure>
             </div>
           </div>
-          <div class="tp-cta"><a class="cta" href="#start"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-prod.cta">預約產品設計領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+          <div class="tp-cta"><a class="cta" href="https://novastar.kolable.app/meets/us" target="_blank" rel="noopener"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-prod.cta">預約產品設計領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
         </div>
 
         <!-- ── 工程設計 ── -->
@@ -1581,7 +1581,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
               <figure class="workph"><img class="wp-img" data-cms-src="tab-eng.w3_img" data-cms-hide-empty hidden alt="" loading="lazy" decoding="async"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="9" cy="10" r="1.8"/><path d="M3 17l5-4 4 3 4-4 5 5"/></svg><figcaption data-cms="tab-eng.w3_cap">CI/CD 部署 pipeline</figcaption><span class="ph-tag">IMAGE SLOT</span></figure>
             </div>
           </div>
-          <div class="tp-cta"><a class="cta" href="#start"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-eng.cta">預約工程設計領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+          <div class="tp-cta"><a class="cta" href="https://novastar.kolable.app/meets/us" target="_blank" rel="noopener"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-eng.cta">預約工程設計領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
         </div>
 
       </div>
@@ -1589,7 +1589,6 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
       <div class="curr-svc reveal">
         <div class="tw-k">每個專案班都包含</div>
         <div class="svc-people">
-          <div class="avs"><img src="img/mentors/vsy.jpg" alt="" loading="lazy" decoding="async"><img src="img/mentors/redfish.jpg" alt="" loading="lazy" decoding="async"><img src="img/mentors/kk.jpg" alt="" loading="lazy" decoding="async"><span class="more">+6</span></div>
           <p data-cms="curr.people">五大領域業界業師陪跑你的 12 週 —— 每週看你的作品、給你回饋。</p>
         </div>
         <ul class="svc" data-cms-list="curr.svc">
@@ -1707,7 +1706,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
       <!-- 預約諮詢表單 → nova_leads（anon 只能新增；白名單後台可讀） -->
       <form id="lead-form" class="lead-form" novalidate>
         <div class="inv-consult"><!-- 示意人像（AI 生成 · 亞洲專業人士），待換真實顧問照 -->
-          <span class="ca">顧<img src="img/portrait_consult.jpg" data-cms-src="invite.consult_img" alt="NOVA 顧問" loading="lazy" decoding="async"></span>
+          <span class="ca">顧<img data-cms-src="invite.consult_img" data-cms-hide-empty hidden alt="NOVA 顧問" loading="lazy" decoding="async"></span>
           <p><b data-cms="invite.consult_t">顧問一對一與你對談</b><span data-cms="invite.consult_p"> —— 聊聊目標與程度，幫你選領域、排節奏，聊完再決定。</span></p>
         </div>
         <div class="lf-grid">

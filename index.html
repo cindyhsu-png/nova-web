@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>NOVA 超星計畫 — 別人練好幾年的專業，用 AI 賦能快速做出成果</title>
-<meta name="description" content="NOVA 超星計畫：別人練好幾年的專業，用 AI 賦能快速做出成果。行銷、設計、自媒體、產品設計、工程設計五大領域專案班，5–8 人小班、每月一梯、業界業師陪跑，12 週產出可交付的實戰作品。">
+<meta name="description" content="NOVA 超星計畫：別人練好幾年的專業，用 AI 賦能快速做出成果。行銷、設計、自媒體、產品設計、工程五大領域專案班，5–8 人小班、每月一梯、業界業師陪跑，12 週產出可交付的實戰作品。">
 <!-- 社群分享（Open Graph / Twitter）— 上線前把 og:url 換成正式網域 -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NOVA 超星計畫">
@@ -45,7 +45,7 @@
   --d-des:#B36FD1;   /* 設計 */
   --d-med:#4AA6E0;   /* 自媒體 */
   --d-prod:#2EBFA0;  /* 產品設計 */
-  --d-eng:#8B7CFF;   /* 工程設計 */
+  --d-eng:#8B7CFF;   /* 工程 */
   --noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='nz'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23nz)'/%3E%3C/svg%3E");
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -995,7 +995,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
         <button class="dm-item" data-dom="des" style="--dc:var(--d-des)"><span class="n">02</span><span class="t"><span data-cms="domains.des_menu">AI 賦能設計</span><em data-cms="domains.des_menu_en">Design</em></span><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
         <button class="dm-item" data-dom="med" style="--dc:var(--d-med)"><span class="n">03</span><span class="t"><span data-cms="domains.med_menu">AI 賦能自媒體</span><em data-cms="domains.med_menu_en">Self-Media</em></span><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
         <button class="dm-item" data-dom="prod" style="--dc:var(--d-prod)"><span class="n">04</span><span class="t"><span data-cms="domains.prod_menu">AI 賦能產品設計</span><em data-cms="domains.prod_menu_en">Product</em></span><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
-        <button class="dm-item" data-dom="eng" style="--dc:var(--d-eng)"><span class="n">05</span><span class="t"><span data-cms="domains.eng_menu">AI 賦能工程設計</span><em data-cms="domains.eng_menu_en">Engineering</em></span><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+        <button class="dm-item" data-dom="eng" style="--dc:var(--d-eng)"><span class="n">05</span><span class="t"><span data-cms="domains.eng_menu">AI 賦能工程</span><em data-cms="domains.eng_menu_en">Engineering</em></span><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
       </nav>
       <div class="dom-panes">
       <!-- 領域 3D 徽章 — 破格於卡片右上角（一半在內一半在外），星環軌道墊在卡片後 -->
@@ -1010,7 +1010,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
         <canvas class="b3d" data-dom="des" data-icon="pen" data-label="設計" data-idx="1"></canvas>
         <canvas class="b3d" data-dom="med" data-icon="wave" data-label="自媒體" data-idx="2"></canvas>
         <canvas class="b3d" data-dom="prod" data-icon="grid" data-label="產品設計" data-idx="3"></canvas>
-        <canvas class="b3d" data-dom="eng" data-icon="code" data-label="工程設計" data-idx="4"></canvas>
+        <canvas class="b3d" data-dom="eng" data-icon="code" data-label="工程" data-idx="4"></canvas>
       </div>
 
       <article class="dom-pane active" id="dom-mkt" style="--dc:var(--d-mkt)">
@@ -1068,7 +1068,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
       <article class="dom-pane" id="dom-eng" style="--dc:var(--d-eng)">
         <div class="dp-main">
           <div class="dcard-ix"><span class="cur">05</span> <span class="sep">/</span> 05</div>
-          <h3 class="dcard-t"><span data-cms="domains.eng_title">AI 賦能工程設計</span><span class="en" data-cms="domains.eng_en">AI-Powered Engineering</span></h3>
+          <h3 class="dcard-t"><span data-cms="domains.eng_title">AI 賦能工程</span><span class="en" data-cms="domains.eng_en">AI-Powered Engineering</span></h3>
           <p class="dcard-d" data-cms="domains.eng_d">把想法變成真正能跑的東西 —— AI 陪你寫、幫你改、替你除錯，不是資深工程師，也能做出能上線的應用。</p>
         </div>
         <aside class="dp-side">
@@ -1096,7 +1096,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
         <button class="tabbtn" data-cms-sec="tab-des" data-tab="des" style="--dc:var(--d-des)" role="tab" aria-selected="false">設計<span>Design</span></button>
         <button class="tabbtn" data-cms-sec="tab-med" data-tab="med" style="--dc:var(--d-med)" role="tab" aria-selected="false">自媒體<span>Self-Media</span></button>
         <button class="tabbtn" data-cms-sec="tab-prod" data-tab="prod" style="--dc:var(--d-prod)" role="tab" aria-selected="false">產品設計<span>Product</span></button>
-        <button class="tabbtn" data-cms-sec="tab-eng" data-tab="eng" style="--dc:var(--d-eng)" role="tab" aria-selected="false">工程設計<span>Engineering</span></button>
+        <button class="tabbtn" data-cms-sec="tab-eng" data-tab="eng" style="--dc:var(--d-eng)" role="tab" aria-selected="false">工程<span>Engineering</span></button>
       </div>
 
       <div class="tabpanels">
@@ -1490,11 +1490,11 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
           <div class="tp-cta"><a class="cta" href="https://novastar.kolable.app/meets/us" target="_blank" rel="noopener"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-prod.cta">預約產品設計領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
         </div>
 
-        <!-- ── 工程設計 ── -->
+        <!-- ── 工程 ── -->
         <div class="tabpanel" id="tab-eng" data-cms-sec="tab-eng" style="--dc:var(--d-eng)" role="tabpanel">
           <header class="tp-head">
-            <div class="tp-name"><span data-cms="tab-eng.name">工程設計專案班</span><span class="en" data-cms="tab-eng.en">AI-POWERED ENGINEERING · 12 週</span></div>
-            <p class="tp-lead" data-cms="tab-eng.lead">用 AI 帶你走完整條開發流，一人兼任規格、前後端與部署 —— 從需求一路做到能上線的 AI 應用。</p>
+            <div class="tp-name"><span data-cms="tab-eng.name">工程專案班</span><span class="en" data-cms="tab-eng.en">AI-POWERED ENGINEERING · 12 週</span></div>
+            <p class="tp-lead" data-cms="tab-eng.lead">用 AI 帶你走完整條開發流 —— 從 Skill 到 Agent，一人兼任規格、前後端、部署與維運，做到能上線的 AI 應用。</p>
           </header>
           <div class="tp-fitrow">
             <div class="tp-fit"><div class="tw-k">適合誰</div><div class="fit-chips" data-cms-list="tab-eng.fit">
@@ -1508,61 +1508,61 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
           </div>
           <div class="tw-k" style="margin:clamp(34px,5vh,52px) 0 0">12 週學習地圖 · 4 個階段</div>
           <div class="lv-bar">
-            <div class="lv-seg" style="--o:.4;flex:1"><i>L0</i><b data-cms="tab-eng.lv0_t">開發環境建置</b><em data-cms="tab-eng.lv0_w">W1</em></div>
-            <div class="lv-seg" style="--o:.6;flex:3"><i>L1</i><b data-cms="tab-eng.lv1_t">規格與架構自動化</b><em data-cms="tab-eng.lv1_w">W2–4</em></div>
-            <div class="lv-seg" style="--o:.8;flex:3"><i>L2</i><b data-cms="tab-eng.lv2_t">前後端與串接</b><em data-cms="tab-eng.lv2_w">W5–7</em></div>
-            <div class="lv-seg" style="--o:1;flex:5"><i>L3</i><b data-cms="tab-eng.lv3_t">測試部署與 pipeline</b><em data-cms="tab-eng.lv3_w">W8–12</em></div>
+            <div class="lv-seg" style="--o:.4;flex:2"><i>L1</i><b data-cms="tab-eng.lv0_t">環境與 Skill 入門</b><em data-cms="tab-eng.lv0_w">W1–2</em></div>
+            <div class="lv-seg" style="--o:.6;flex:3"><i>L2</i><b data-cms="tab-eng.lv1_t">自製 Skill × 前端實作</b><em data-cms="tab-eng.lv1_w">W3–5</em></div>
+            <div class="lv-seg" style="--o:.8;flex:4"><i>L3</i><b data-cms="tab-eng.lv2_t">Agent 驅動的規格與後端</b><em data-cms="tab-eng.lv2_w">W6–9</em></div>
+            <div class="lv-seg" style="--o:1;flex:3"><i>L4</i><b data-cms="tab-eng.lv3_t">Agent 編排與維運自動化</b><em data-cms="tab-eng.lv3_w">W10–12</em></div>
           </div>
           <div class="tp-map">
             <section class="lvg" style="--o:.4">
-              <div class="lvg-side"><span class="lv-badge">L0</span><div class="lvg-w" data-cms="tab-eng.l0_wr">W1</div></div>
+              <div class="lvg-side"><span class="lv-badge">L1</span><div class="lvg-w" data-cms="tab-eng.l0_wr">W1–2</div></div>
               <div class="lvg-main">
-                <header class="lvg-h"><h4 data-cms="tab-eng.l0_h">開發環境建置</h4><span class="lvg-out" data-cms="tab-eng.l0_out">階段產出 — AI 編碼環境 ＋ agent</span></header>
-                <p class="lvg-val" data-cms="tab-eng.l0_val">第一週就把 AI 編碼環境與 agent 建好，不必是工程師，也能把想法變成能跑的程式。</p>
+                <header class="lvg-h"><h4 data-cms="tab-eng.l0_h">環境與 Skill 入門</h4><span class="lvg-out" data-cms="tab-eng.l0_out">階段產出 — AI 編碼環境 ＋ 作品集平台首頁</span></header>
+                <p class="lvg-val" data-cms="tab-eng.l0_val">建好 Claude Code／Cursor 編碼環境，搞懂 Skill 與 Agent 的差別，第一週就上線自己的頁面。</p>
                 <div class="lvg-weeks" data-cms-list="tab-eng.l0_weeks">
-                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W1</span><span class="t" data-cms-f="t">開發流程盤點 × Agent 環境建置</span><span class="o" data-cms-f="o">AI 編碼環境 ＋ agent</span></div>
+                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W1</span><span class="t" data-cms-f="t">開發環境 × Skill 與 Agent 概念</span><span class="o" data-cms-f="o">AI 編碼環境 ＋ 個人自我介紹頁</span></div>
+                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W2</span><span class="t" data-cms-f="t">版面設計與作品集平台起手</span><span class="o" data-cms-f="o">作品集平台首頁上線</span></div>
                 </div>
               </div>
             </section>
             <section class="lvg" style="--o:.6">
-              <div class="lvg-side"><span class="lv-badge">L1</span><div class="lvg-w" data-cms="tab-eng.l1_wr">W2–4</div></div>
+              <div class="lvg-side"><span class="lv-badge">L2</span><div class="lvg-w" data-cms="tab-eng.l1_wr">W3–5</div></div>
               <div class="lvg-main">
-                <header class="lvg-h"><h4 data-cms="tab-eng.l1_h">規格與架構自動化</h4><span class="lvg-out" data-cms="tab-eng.l1_out">階段產出 — 需求→規格自動生成流</span></header>
-                <p class="lvg-val" data-cms="tab-eng.l1_val">需求丟進去自動長出規格、資料結構與 API 設計，跳過最卡人的那一段。</p>
+                <header class="lvg-h"><h4 data-cms="tab-eng.l1_h">自製 Skill × 前端實作</h4><span class="lvg-out" data-cms="tab-eng.l1_out">階段產出 — 自製 Skill ＋ 互動小工具</span></header>
+                <p class="lvg-val" data-cms="tab-eng.l1_val">從互動邏輯、API 串接到元件化重構，把重複流程封裝成自己的 Skill。</p>
                 <div class="lvg-weeks" data-cms-list="tab-eng.l1_weeks">
-                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W2</span><span class="t" data-cms-f="t">需求 → 技術規格自動化</span><span class="o" data-cms-f="o">需求→規格自動生成流</span></div>
-                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W3</span><span class="t" data-cms-f="t">資料結構／API 設計自動化</span><span class="o" data-cms-f="o">資料結構／API 設計流</span></div>
-                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W4</span><span class="t" data-cms-f="t">AI 產前端頁面</span><span class="o" data-cms-f="o">前端頁面生成流</span></div>
+                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W3</span><span class="t" data-cms-f="t">互動邏輯 × 自製第一個 Skill</span><span class="o" data-cms-f="o">可操作的互動小工具 ＋ 自製 Skill</span></div>
+                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W4</span><span class="t" data-cms-f="t">外部 API 串接</span><span class="o" data-cms-f="o">串接真實外部服務的查詢工具</span></div>
+                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W5</span><span class="t" data-cms-f="t">元件化與框架入門</span><span class="o" data-cms-f="o">作品集平台 v2 ＋ 元件庫清單</span></div>
                 </div>
               </div>
             </section>
             <section class="lvg" style="--o:.8">
-              <div class="lvg-side"><span class="lv-badge">L2</span><div class="lvg-w" data-cms="tab-eng.l2_wr">W5–7</div></div>
+              <div class="lvg-side"><span class="lv-badge">L3</span><div class="lvg-w" data-cms="tab-eng.l2_wr">W6–9</div></div>
               <div class="lvg-main">
-                <header class="lvg-h"><h4 data-cms="tab-eng.l2_h">前後端與串接</h4><span class="lvg-out" data-cms="tab-eng.l2_out">階段產出 — 全端應用 ＋ API 串接</span></header>
-                <p class="lvg-val" data-cms="tab-eng.l2_val">前端、後端、資料庫、第三方串接全部 AI 生成，一個人端出一組團隊的產出。</p>
+                <header class="lvg-h"><h4 data-cms="tab-eng.l2_h">Agent 驅動的規格與後端</h4><span class="lvg-out" data-cms="tab-eng.l2_out">階段產出 — 專案規格書 ＋ 可呼叫的後端 API</span></header>
+                <p class="lvg-val" data-cms="tab-eng.l2_val">讓 Agent 產出規格、資料模型與 API，打通前端→後端→資料庫，補上會員系統與資安控管。</p>
                 <div class="lvg-weeks" data-cms-list="tab-eng.l2_weeks">
-                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W5</span><span class="t" data-cms-f="t">AI 產後端／API</span><span class="o" data-cms-f="o">後端／API 生成流</span></div>
-                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W6</span><span class="t" data-cms-f="t">資料庫＋CRUD 自動生成</span><span class="o" data-cms-f="o">資料庫＋CRUD 生成流</span></div>
-                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W7</span><span class="t" data-cms-f="t">第三方 API／MCP 串接自動化</span><span class="o" data-cms-f="o">API／MCP 串接自動化流</span></div>
+                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W6</span><span class="t" data-cms-f="t">需求 → 規格 → 任務拆解（Agent 上場）</span><span class="o" data-cms-f="o">專案完整規格書 ＋ 多頁作品集平台</span></div>
+                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W7</span><span class="t" data-cms-f="t">資料結構／API 設計 × 第一支後端</span><span class="o" data-cms-f="o">資料模型 ＋ API 文件 ＋ 可呼叫的 API</span></div>
+                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W8</span><span class="t" data-cms-f="t">資料庫與 CRUD</span><span class="o" data-cms-f="o">核心資料表 ＋ CRUD（全程假資料）</span></div>
+                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W9</span><span class="t" data-cms-f="t">會員系統與個資風險控管</span><span class="o" data-cms-f="o">會員登入後台 ＋ 資安稽核報告</span></div>
                 </div>
               </div>
             </section>
             <section class="lvg" style="--o:1">
-              <div class="lvg-side"><span class="lv-badge">L3</span><div class="lvg-w" data-cms="tab-eng.l3_wr">W8–12</div></div>
+              <div class="lvg-side"><span class="lv-badge">L4</span><div class="lvg-w" data-cms="tab-eng.l3_wr">W10–12</div></div>
               <div class="lvg-main">
-                <header class="lvg-h"><h4 data-cms="tab-eng.l3_h">測試部署與 pipeline</h4><span class="lvg-out" data-cms="tab-eng.l3_out">階段產出 — 可上線應用 ＋ 開發 pipeline</span></header>
-                <p class="lvg-val" data-cms="tab-eng.l3_val">自動測試、自動部署、自動監控 —— 你負責決策，程式自己上線。</p>
+                <header class="lvg-h"><h4 data-cms="tab-eng.l3_h">Agent 編排與維運自動化</h4><span class="lvg-out" data-cms="tab-eng.l3_out">階段產出 — 一人公司 Agent 團隊</span></header>
+                <p class="lvg-val" data-cms="tab-eng.l3_val">CI/CD 自動部署、測試與維運 Agent，最後用一句指令編排整個開發團隊。</p>
                 <div class="lvg-weeks" data-cms-list="tab-eng.l3_weeks">
-                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W8</span><span class="t" data-cms-f="t">自動寫測試＋修 bug</span><span class="o" data-cms-f="o">自動測試＋修復 agent 流</span></div>
-                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W9</span><span class="t" data-cms-f="t">自動化部署（CI/CD）</span><span class="o" data-cms-f="o">CI/CD 自動部署流程</span></div>
-                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W10</span><span class="t" data-cms-f="t">監控＋錯誤回報修復建議</span><span class="o" data-cms-f="o">監控＋修復建議 agent</span></div>
-                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W11</span><span class="t" data-cms-f="t">串成需求 → 上線 pipeline</span><span class="o" data-cms-f="o">需求→上線開發 pipeline</span></div>
-                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W12</span><span class="t" data-cms-f="t">系統整合驗收</span><span class="o" data-cms-f="o">可上線 AI 應用 ＋ SOP</span></div>
+                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W10</span><span class="t" data-cms-f="t">整合上線與自動部署（CI/CD）</span><span class="o" data-cms-f="o">正式上線平台（推送即自動部署）</span></div>
+                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W11</span><span class="t" data-cms-f="t">自動測試、監控與網站維運</span><span class="o" data-cms-f="o">測試套件 ＋ 維運 Agent（告警→自動修復）</span></div>
+                  <div class="wk" data-cms-item><span class="w" data-cms-f="w">W12</span><span class="t" data-cms-f="t">一句指令的 Agent 團隊 × 成果發表</span><span class="o" data-cms-f="o">一人公司 Agent 團隊 ＋ 完整作品集與文件</span></div>
                 </div>
               </div>
             </section>
-            <div class="tp-final"><span class="k">終點結果</span><p data-cms="tab-eng.final">AI 應用開發 pipeline ＋ 能上線的全端應用 ＋ 可複製的 SOP —— 需求進去，產品出來，你只做架構決策。</p></div>
+            <div class="tp-final"><span class="k">終點結果</span><p data-cms="tab-eng.final">一人公司 Agent 團隊 ＋ 正式上線的作品集平台 ＋ 開發維運 SOP —— 一句指令，從規格跑到上線。</p></div>
           </div>
           <div class="tp-impact">
             <div class="tw-k">AI 賦能 · 工作節點全面提速</div>
@@ -1584,7 +1584,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
               <figure class="workph"><img class="wp-img" data-cms-src="tab-eng.w3_img" data-cms-hide-empty hidden alt="" loading="lazy" decoding="async"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="9" cy="10" r="1.8"/><path d="M3 17l5-4 4 3 4-4 5 5"/></svg><figcaption data-cms="tab-eng.w3_cap">CI/CD 部署 pipeline</figcaption><span class="ph-tag">IMAGE SLOT</span></figure>
             </div>
           </div>
-          <div class="tp-cta"><a class="cta" href="https://novastar.kolable.app/meets/us" target="_blank" rel="noopener"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-eng.cta">預約工程設計領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+          <div class="tp-cta"><a class="cta" href="https://novastar.kolable.app/meets/us" target="_blank" rel="noopener"><i class="cx tl"></i><i class="cx tr"></i><i class="cx bl"></i><i class="cx br"></i><span class="fill"></span><span class="label"><span data-cms="tab-eng.cta">預約工程領域諮詢</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
         </div>
 
       </div>
@@ -1652,7 +1652,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
        <article class="show reveal d1" style="--dc:var(--d-des)"><div class="sh-dom" data-cms="shows.s2_dom">AI 賦能設計</div><h4 data-cms="shows.s2_t">完整品牌視覺包</h4><p data-cms="shows.s2_p">為在地咖啡品牌做出 Logo、包裝與社群主視覺一整套，素材自動量產。</p><div class="sh-by" data-cms="shows.s2_by">宜庭 · 大三</div></article>
        <article class="show reveal d2" style="--dc:var(--d-med)"><div class="sh-dom" data-cms="shows.s3_dom">AI 賦能自媒體</div><h4 data-cms="shows.s3_t">經營中的頻道</h4><p data-cms="shows.s3_p">用 AI 內容產線，30 天穩定日更短影音，一個人撐起整條產線。</p><div class="sh-by" data-cms="shows.s3_by">阿威 · 大四</div></article>
        <article class="show reveal d3" style="--dc:var(--d-prod)"><div class="sh-dom" data-cms="shows.s4_dom">AI 賦能產品設計</div><h4 data-cms="shows.s4_t">可互動產品原型</h4><p data-cms="shows.s4_p">從用戶研究到高保真原型，用 Vibe Coding 完成一個能上線的 App。</p><div class="sh-by" data-cms="shows.s4_by">于晴 · 新鮮人</div></article>
-       <article class="show reveal d4" style="--dc:var(--d-eng)"><div class="sh-dom" data-cms="shows.s5_dom">AI 賦能工程設計</div><h4 data-cms="shows.s5_t">可上線的 AI 應用</h4><p data-cms="shows.s5_p">需求到部署由 agent 主跑，一個人做出含前後端與資料庫的全端應用。</p><div class="sh-by" data-cms="shows.s5_by">冠廷 · 在職</div></article>
+       <article class="show reveal d4" style="--dc:var(--d-eng)"><div class="sh-dom" data-cms="shows.s5_dom">AI 賦能工程</div><h4 data-cms="shows.s5_t">可上線的 AI 應用</h4><p data-cms="shows.s5_p">需求到部署由 agent 主跑，一個人做出含前後端與資料庫的全端應用。</p><div class="sh-by" data-cms="shows.s5_by">冠廷 · 在職</div></article>
      </div>
      <div class="src reveal" data-cms="shows.note">＊上述為課程情境示意範例，實際成果依學員題目與投入而定。</div>
    </div>
@@ -1718,7 +1718,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
           <div class="lf-field"><label for="lf-email">Email</label><input id="lf-email" name="email" type="email" maxlength="200" autocomplete="email"></div>
           <div class="lf-field"><label for="lf-domain">想深耕的領域</label>
             <select id="lf-domain" name="domain">
-              <option value="">還在考慮</option><option>行銷</option><option>設計</option><option>自媒體</option><option>產品設計</option><option>工程設計</option>
+              <option value="">還在考慮</option><option>行銷</option><option>設計</option><option>自媒體</option><option>產品設計</option><option>工程</option>
             </select>
           </div>
           <div class="lf-field lf-wide"><label for="lf-msg">想聊的內容（選填）</label><textarea id="lf-msg" name="message" rows="3" maxlength="2000"></textarea></div>
@@ -1775,7 +1775,7 @@ const SKILLS = [
   ['設計','pen','不會畫圖也能做整套品牌視覺 —— 12 週做出品牌視覺設計包。',0xB36FD1],
   ['自媒體','wave','選題到成片，自媒體內容生產線 —— 12 週做出能持續產出的頻道。',0x4AA6E0],
   ['產品設計','grid','從需求到可點擊原型的產品設計 —— 12 週做出完整 UI/UX 產品案。',0x2EBFA0],
-  ['工程設計','code','用 AI 寫程式做出能上線的應用 —— 12 週做出可上線的 AI 應用。',0x8B7CFF]
+  ['工程','code','用 AI 寫程式做出能上線的應用 —— 12 週做出可上線的 AI 應用。',0x8B7CFF]
 ];
 
 const canvas=document.getElementById('scene');

@@ -818,7 +818,8 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
       <a href="#domains" data-spy="domains">03<span class="sb-l">Domains</span></a>
       <a href="#curriculum" data-spy="curriculum">04<span class="sb-l">Curriculum</span></a>
       <a href="#mentors" data-spy="mentors">05<span class="sb-l">Mentors</span></a>
-      <a href="#start" data-spy="start">06<span class="sb-l">Start</span></a>
+      <a href="#growth" data-spy="growth">06<span class="sb-l">Growth</span></a>
+      <a href="#start" data-spy="start">07<span class="sb-l">Start</span></a>
     </nav>
     <div class="sb-rot">SUPERNOVA</div>
   </div>
@@ -1699,7 +1700,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
       <span class="inv-glow"></span>
     </div>
     <div class="wrap inv-content reveal">
-      <div class="sec-eyebrow" style="justify-content:center"><span class="n">06</span> 現在開始 — START EVOLUTION</div>
+      <div class="sec-eyebrow" style="justify-content:center"><span class="n">07</span> 現在開始 — START EVOLUTION</div>
       <h2 class="inv-h">準備好做出你的<br>第一個 <span class="ac">AI 作品</span>了嗎</h2>
       <p class="inv-p" data-cms="invite.p">用 AI 賦能，別人練好幾年的專業，你現在就做得出來。<br>顧問會與你一對一了解目標、選定領域與節奏。</p>
       <div class="inv-steps">
@@ -2175,7 +2176,7 @@ function initScroll(){
   const spyLinks=[...document.querySelectorAll('.sb-nav a')];
   if(spyLinks.length){
     const spyIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const id='#'+e.target.id;spyLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')===id));}}),{rootMargin:'-45% 0px -45% 0px'});
-    ['why','map','domains','curriculum','mentors','start'].forEach(id=>{const el=document.getElementById(id);if(el)spyIO.observe(el);});
+    ['why','map','domains','curriculum','mentors','growth','start'].forEach(id=>{const el=document.getElementById(id);if(el)spyIO.observe(el);});
   }
   // --- 05 Tab 學習地圖：切換 + 領域卡「查看 12 週地圖」跳轉聯動 ---
   (function initTabs(){

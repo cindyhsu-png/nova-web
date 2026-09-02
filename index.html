@@ -2238,6 +2238,8 @@ function initScroll(){
     const miles=[...track.querySelectorAll('.mile')],segs=[...document.querySelectorAll('#flagScrub .seg')];
     const fill=document.getElementById('flagFill'),pulse=document.getElementById('flagPulse'),pct=document.getElementById('flagPct'),n=miles.length;
     if(reduce){track.classList.add('static');document.body.classList.add('noanim');miles.forEach(m=>m.classList.add('active'));segs.forEach(s=>s.classList.add('on'));if(pct)pct.textContent='100';if(fill)fill.style.transform='scaleX(1)';return;}
+    // 手機版（≤820px）CSS 已改為直向排列，不建立 pin，直接點亮全部卡片正常捲動
+    if(matchMedia('(max-width:820px)').matches){miles.forEach(m=>m.classList.add('active'));segs.forEach(s=>s.classList.add('on'));if(pct)pct.textContent='100';if(fill)fill.style.transform='scaleX(1)';return;}
     let centers=[],lastAct=-1;
     const measure=()=>{centers=miles.map(m=>m.offsetLeft+m.offsetWidth/2);};
     const focal=()=>track.parentElement.clientWidth*0.30;

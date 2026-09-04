@@ -1646,7 +1646,7 @@ addEventListener('DOMContentLoaded',function(){setTimeout(function(){document.qu
     </div>
    </div>
    <!-- 學員成果案例（v7 S32 · 示意佔位）TODO: 待客戶端提供真實學員作品與成果數據 -->
-   <div class="wrap shows" data-cms-sec="shows">
+   <div class="wrap shows" id="shows" data-cms-sec="shows">
      <div class="tw-k reveal" style="--dc:var(--accent)">學員成果 — STUDENT SHOWCASE</div>
      <h3 class="shows-h reveal">學員做出的，不是作業，<span class="ac">是能上場的作品</span></h3>
      <div class="show-grid">
@@ -2268,6 +2268,14 @@ function initScroll(){
       gsap.ticker.lagSmoothing(0);
       document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id.length>1){const t=document.querySelector(id);if(t){e.preventDefault();lenis.scrollTo(t,{offset:-8});}}}));
     }catch(err){console.warn('lenis init failed',err);}
+  }
+  // 錨點直達：帶 #hash 開啟（含圖文選單、外部連結）時，初始化完成後自動捲到對應區塊
+  if(location.hash.length>1){
+    addEventListener('load',()=>{setTimeout(()=>{
+      const t=document.querySelector(location.hash);if(!t)return;
+      try{ScrollTrigger.refresh();}catch(e){}
+      if(window.lenis)window.lenis.scrollTo(t,{offset:-8,immediate:true});else t.scrollIntoView();
+    },450);});
   }
   // --- Hero → 02 transition: the badge constellation dollies back + rises + quiets (proposal A) ---
   function initHeroTransition(){

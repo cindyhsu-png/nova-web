@@ -2270,12 +2270,14 @@ function initScroll(){
     }catch(err){console.warn('lenis init failed',err);}
   }
   // 錨點直達：帶 #hash 開啟（含圖文選單、外部連結）時，初始化完成後自動捲到對應區塊
+  // 初始化各階段可能把捲動位置重設，故多次重試；使用者一旦自行捲動即停止
   if(location.hash.length>1){
-    addEventListener('load',()=>{setTimeout(()=>{
+    const hashJump=()=>{
       const t=document.querySelector(location.hash);if(!t)return;
       try{ScrollTrigger.refresh();}catch(e){}
       if(window.lenis)window.lenis.scrollTo(t,{offset:-8,immediate:true});else t.scrollIntoView();
-    },450);});
+    };
+    addEventListener('load',()=>{[350,900,1800].forEach(ms=>setTimeout(()=>{if(scrollY<60)hashJump();},ms));});
   }
   // --- Hero → 02 transition: the badge constellation dollies back + rises + quiets (proposal A) ---
   function initHeroTransition(){

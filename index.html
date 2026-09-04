@@ -2277,7 +2277,8 @@ function initScroll(){
       try{ScrollTrigger.refresh();}catch(e){}
       if(window.lenis)window.lenis.scrollTo(t,{offset:-8,immediate:true});else t.scrollIntoView();
     };
-    addEventListener('load',()=>{[350,900,1800].forEach(ms=>setTimeout(()=>{if(scrollY<60)hashJump();},ms));});
+    const armHashJump=()=>{[350,900,1800,3200].forEach(ms=>setTimeout(()=>{if(scrollY<60)hashJump();},ms));};
+    if(document.readyState==='complete')armHashJump();else addEventListener('load',armHashJump);
   }
   // --- Hero → 02 transition: the badge constellation dollies back + rises + quiets (proposal A) ---
   function initHeroTransition(){
